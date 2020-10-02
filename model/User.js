@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema ({
     },
     email: {
         type: String,
-        required: true,
+        required: true, //Setting email as required
         min: 6,
         max: 255
     },
