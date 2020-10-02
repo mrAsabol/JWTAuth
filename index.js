@@ -7,7 +7,7 @@ const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
 
 dotenv.config();
-
+//Connecting to DB
 mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true },() => console.log('Conected to DB!'));
 
 app.use(express.json());
