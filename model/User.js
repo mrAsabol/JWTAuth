@@ -23,11 +23,11 @@ const userSchema = new mongoose.Schema ({
         type: Date,
         default: Date.now
     },
-    backupEmail: {
+    oneTimeCode: {
         type: String,
-        required: false, //Setting backup email as required
-        min: 6,
-        max: 255
+        required: true,
+        min: 5,
+        max: 5
     },
 });
 
