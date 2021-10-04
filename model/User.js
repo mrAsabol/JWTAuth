@@ -22,7 +22,13 @@ const userSchema = new mongoose.Schema ({
     date: {
         type: Date,
         default: Date.now
-    }
+    },
+    backupEmail: {
+        type: String,
+        required: false, //Setting backup email as required
+        min: 6,
+        max: 255
+    },
 });
 
 module.exports = mongoose.model('User', userSchema);
