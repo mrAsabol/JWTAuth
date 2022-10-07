@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema ({
     name: {
         type: String,
-        required: true, //setting username as required
+        required: true, //setting username as required from method
         min: 6,
         max: 255
     },
